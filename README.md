@@ -60,7 +60,7 @@ A printed circuit board, or PCB, is used to mechanically support and electricall
 
 2.	Then the pcb board was made by using that design. To make it a cu board and ferric chloride was used.<br>
 
-3.	And then the components used are soldered to the pcb board as in figure ….<br>
+3.	And then the components used are soldered to the pcb board as in figure 14 <br>
 
 4.	Then the code that use to program the pic microcontroller was written using the MP labs software and uploaded it into the pic microcontroller using pickit 3.<br>
 
