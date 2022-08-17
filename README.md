@@ -32,13 +32,46 @@ A printed circuit board, or PCB, is used to mechanically support and electricall
 
 •	Wires<br>
 
-
+<img src="https://user-images.githubusercontent.com/109506465/185040098-4cefb9ee-ee9e-4ec9-a173-c030aff457db.jpg" width= 300>
 
 •	Motor module<br>
+
+<img src="https://user-images.githubusercontent.com/109506465/185040292-5609fc82-6010-4c07-9ab4-875669bb8978.jpg" width= 300>
+
 •	Capacitors<br>
+
+<img src="https://user-images.githubusercontent.com/109506465/185040456-2dcb759c-49c1-4589-9b72-989c1854ba30.jpg" width= 300>
+
 •	Crystal oscillator<br>
+
+<img src="https://user-images.githubusercontent.com/109506465/185040537-6784263a-2bd3-474b-8122-099102915751.jpg" width= 300>
+
 •	Pic adaptor<br>
+
+<img src="https://user-images.githubusercontent.com/109506465/185040713-72d7c49c-a4d5-4215-8adf-1d13939de1c0.jpg" width= 300>
+
 •	Soldering iron<br>
+
+<img src="https://user-images.githubusercontent.com/109506465/185040999-1a100701-3bc6-42af-8c10-b6414bfb8916.jpg" width= 300> <br>
+
+# PROCEDURE
+
+1.	First the pcb design was created using the proteus software.<br>
+
+2.	Then the pcb board was made by using that design. To make it a cu board and ferric chloride was used.<br>
+
+3.	And then the components used are soldered to the pcb board as in figure ….<br>
+
+4.	Then the code that use to program the pic microcontroller was written using the MP labs software and uploaded it into the pic microcontroller using pickit 3.<br>
+
+5.	Then it was connected to the pcb board using the pic adaptor.<br>
+
+6.	After that three sensors and the motor module was connected to the pic16F877A.<br>
+
+7.	Then the motors were connected to the motor module.<br>
+
+
+# Operation Table
 
 
 
