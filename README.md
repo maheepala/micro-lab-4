@@ -73,7 +73,7 @@ A printed circuit board, or PCB, is used to mechanically support and electricall
 
 # Operation Table
 
-<img src="https://user-images.githubusercontent.com/109506465/185041891-6fb06f14-1dae-4aaa-a616-506e8d97cb01.png" width= 800 >
+<img src="https://user-images.githubusercontent.com/109506465/185041891-6fb06f14-1dae-4aaa-a616-506e8d97cb01.png" width= 1200>
 
 
 # DISCUSSION
