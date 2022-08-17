@@ -80,6 +80,77 @@ There are two DC motors in this system, one of which pumps water into the tank a
 
 In this system switch one is connected to the pin 2 of the PORT B in the pic16F877A microcontroller. And switch 2 is connected to the pin 1 of PORT B and switch 3 to pin 0 of PORT B. then the motor 1  motor 2 are connected to the pin o and pin 1 in PORT C respectively. <br>
 
+<img src="https://user-images.githubusercontent.com/109506465/185042566-fdff4cd1-1b7b-431c-bcb8-3d16feca7640.png" width= 500 height= 400>
+
+# THE DESIGNED SYSTEM
+
+# CODE USED
+
+#pragma config FOSC = HS        // Oscillator Selection bits (HS oscillator)<br>
+#pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled)<br>
+#pragma config PWRTE = OFF      // Power-up Timer Enable bit (PWRT disabled)<br>
+#pragma config BOREN = OFF      // Brown-out Reset Enable bit (BOR disabled)<br>
+#pragma config LVP = OFF        // Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit (RB3 is digital I/O, HV on MCLR must be used for programming)<br>
+#pragma config CPD = OFF        // Data EEPROM Memory Code Protection bit (Data EEPROM code protection off)<br>
+#pragma config WRT = OFF        // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)<br>
+#pragma config CP = OFF         // Flash Program Memory Code Protection bit (Code protection off)<br>
+
+
+
+#include <xc.h><br>
+#include<htc.h> <br>
+
+#define _XTAL_FREQ 20000000<br>
+
+
+void __interrupt() isr(void){<br>
+    if(RB1 ==1 && RB2 ==1){<br>
+        RC0 =0;<br>
+        RC1 =1;<br>
+        __delay_ms(500);<br>
+        RC1 =0;<br>
+    }<br>
+    INTF =0;<br>
+}<br>
+
+void main (void){<br>
+    INTF =0;<br>
+    INTE =1;<br>
+    GIE =1;<br>
+    INTEDG =1;<br>
+    
+    TRISB0 =1;  //SWITCH 3
+    TRISB1 =1;  //SWITCH 2
+    TRISB2 =1;  //SWITCH 1
+    TRISC0 =0;  //MOTOR 1
+    TRISC1 =0;  //MOTOR 2
+    
+    while(1){
+        if(RB2 ==1 && RB1 ==0 && RB0 ==0){
+            RC0 =1;
+        RC1 =0;
+        }
+         if(RB2 ==1 && RB1 ==1 && RB0 ==0){
+            RC0 =1;
+        RC1 =0;
+        }
+         if(RB2 ==0 && RB1 ==0 && RB0 ==0){
+            RC0 =0;
+        RC1 =0;
+        }
+    }
+    return();
+}
+
+# REFERENCES
+
+•	George, L. and George, L., 2022. Water Level Indicator Controller Using PIC Microcontroller. [online] electroSome. Available at: <https://electrosome.com/water-level-indicator-controller-pic/> [Accessed 18 July 2022]. <br>
+
+•	2022. [online] Available at: <https://www.researchgate.net/publication/335210568_PIC_Microcontroller_Based_Water_level_Monitoring_and_Controlling_System_using_Sharp_Infra-red_range_sensor> [Accessed 18 July 2022].<br>
+
+•	2022. [online] Available at: <https://livetechindia.com/water-level-indicator-using-micro-controller-pic16f877a/> [Accessed 18 July 2022].<br>
+
+•	2022. [online] Available at: <https://www.fierceelectronics.com/sensors/what-ir-sensor> [Accessed 18 July 2022].<br>
 
 
 
