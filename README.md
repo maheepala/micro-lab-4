@@ -84,6 +84,8 @@ In this system switch one is connected to the pin 2 of the PORT B in the pic16F8
 
 # THE DESIGNED SYSTEM
 
+<img src="https://user-images.githubusercontent.com/109506465/185121591-14dfd617-ce7d-43f7-b0e4-f159534b197f.jpg" width= 500>
+
 # CODE USED
 
 #pragma config FOSC = HS        // Oscillator Selection bits (HS oscillator)<br>
