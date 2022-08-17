@@ -28,8 +28,12 @@ A printed circuit board, or PCB, is used to mechanically support and electricall
 
 •	IR sensors<br>
 
+<img src="https://user-images.githubusercontent.com/109506465/185039263-8b408a2f-6657-4e28-8f6a-56dab7e473c5.png" width= 250>
 
 •	Wires<br>
+
+
+
 •	Motor module<br>
 •	Capacitors<br>
 •	Crystal oscillator<br>
