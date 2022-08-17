@@ -17,7 +17,12 @@ A printed circuit board, or PCB, is used to mechanically support and electricall
 •	PCB board<br>
 
 •	PIC16F877A<br>
+
+<img src="https://user-images.githubusercontent.com/109506465/185037522-f8b3e884-5929-4370-bbb1-eb9358d142c9.jpg" width= 300>
+
 •	DC motors<br>
+
+
 •	IR sensors<br>
 •	Wires<br>
 •	Motor module<br>
