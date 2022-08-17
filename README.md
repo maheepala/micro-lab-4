@@ -73,7 +73,7 @@ A printed circuit board, or PCB, is used to mechanically support and electricall
 
 # Operation Table
 
-<img src="https://user-images.githubusercontent.com/109506465/185041891-6fb06f14-1dae-4aaa-a616-506e8d97cb01.png" width= 800 height= 300>
+<img src="https://user-images.githubusercontent.com/109506465/185041891-6fb06f14-1dae-4aaa-a616-506e8d97cb01.png" width= 800 >
 
 
 # DISCUSSION
@@ -81,7 +81,7 @@ There are two DC motors in this system, one of which pumps water into the tank a
 
 In this system switch one is connected to the pin 2 of the PORT B in the pic16F877A microcontroller. And switch 2 is connected to the pin 1 of PORT B and switch 3 to pin 0 of PORT B. then the motor 1  motor 2 are connected to the pin o and pin 1 in PORT C respectively. <br>
 
-<img src="https://user-images.githubusercontent.com/109506465/185042566-fdff4cd1-1b7b-431c-bcb8-3d16feca7640.png" width= 500 height= 400>
+<img src="https://user-images.githubusercontent.com/109506465/185042566-fdff4cd1-1b7b-431c-bcb8-3d16feca7640.png" width= 500 >
 
 # THE DESIGNED SYSTEM
 
