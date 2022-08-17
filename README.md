@@ -73,6 +73,16 @@ A printed circuit board, or PCB, is used to mechanically support and electricall
 
 # Operation Table
 
+<img src="https://user-images.githubusercontent.com/109506465/185041891-6fb06f14-1dae-4aaa-a616-506e8d97cb01.png" width= 800 height= 300>
+
+# DISCUSSION
+There are two DC motors in this system, one of which pumps water into the tank and the other of which suctions water out of the tank. The water level in the tank is also monitored by three IR sensors. When the IR sensors detect and object it gives a logic low output. According to the above table 1, in the first instance when switch one is on and switch two and three are off the motor one pump the water into the tank and motor two is off. In the second instance when switch one and two are on and switch three is off, motor one pump the water into the tank   and the motor two is off. In the third one when all three switches are on, the motor two suck the water out from the water tank for 500 milliseconds and then it turns off and motor one is off in that instance. Depending on the water level the micro controller produces a logic high or low to turn the switches on and off. And the IR sensors we used in here has a low level trigger output.<br>
+
+In this system switch one is connected to the pin 2 of the PORT B in the pic16F877A microcontroller. And switch 2 is connected to the pin 1 of PORT B and switch 3 to pin 0 of PORT B. then the motor 1  motor 2 are connected to the pin o and pin 1 in PORT C respectively. <br>
+
+
+
+
 
 
 
